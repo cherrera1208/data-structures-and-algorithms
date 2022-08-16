@@ -8,13 +8,13 @@ Write a function named `addOne` that takes an array of numbers, and returns a ne
 Use `forEach` to loop over the input array and work with each value.  Push the new value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
-let newArr = [];
 const addOne = (arr) => {
-  arr.forEach(value => arr.push(value + 1));
+  let newArray = [];
+  arr.forEach(values => newArray.push(values + 1));
+  // console.log(newArray);
+  return (newArray);
 };
 
-addOne(1, 2, 3);
-console.log(newArr);
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -24,7 +24,10 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
-  // Solution code here...
+  let newStringArr = [];
+  arr.forEach(stringValues => newStringArr.push(stringValues + '!'));
+  // console.log(newStringArr);
+  return (newStringArr);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -34,9 +37,10 @@ Write a function named `allUpperCase` that takes an array of strings, and return
 
 Use `forEach` to loop over the input array. The modified strings should each be added into a local array. Return that local array.
 ------------------------------------------------------------------------------------------------ */
-
 const allUpperCase = (arr) => {
-  // Solution code here...
+  let upperCaseArr = [];
+  arr.forEach(upperCaseString => upperCaseArr.push(upperCaseString.toUpperCase()));
+  return (upperCaseArr);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -50,7 +54,7 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  // Solution code here...
+
 };
 
 const speaker = (words, callback) => {
