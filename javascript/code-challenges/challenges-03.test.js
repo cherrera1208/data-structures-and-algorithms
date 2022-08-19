@@ -8,7 +8,9 @@ Write a function called addTwo that takes in an array and adds two to every valu
 
 const addTwo = (arr) => {
   // Solution code here...
+  
   return arr.map(num => num + 2);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
