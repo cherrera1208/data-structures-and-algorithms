@@ -10,6 +10,10 @@ E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
   // Solution code here...
+  return arr.reduce((accumulator, current) => {
+    if (current > accumulator) accumulator = current;
+    return accumulator;
+  }, -1);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -40,6 +44,8 @@ Write a function named checkValues that takes in an object and a value and retur
 
 const checkValues = (obj, value) => {
   // Solution code here...
+  let isFound = Object.keys(obj).find(currKey => obj[currKey] === value);
+  return isFound !== undefined;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -63,6 +69,9 @@ HR has asked you to change the data to make it easier to print so that it looks 
 
 const updateNumbers = (obj) => {
   // Solution code here...
+  let arr = [];
+  Object.keys(obj).forEach(currKey => arr.push(`${currKey}: ${obj[currKey]}`));
+  return arr;
 };
 
 
@@ -117,9 +126,10 @@ const characters = [
 ];
 
 const getHouses = (arr) => {
-  let houses = [];
   // Solution code here...
-  return houses;
+  let house = [];
+  arr.forEach(character => house.push(character.house));
+  return house;
 };
 
 /*------------------------------------------------------------------------------------------------
@@ -136,7 +146,8 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
-
+  let char = arr.find(currChar => currChar.name === character);
+  return Object.values(char).length > 3;
 };
 
 /* ------------------------------------------------------------------------------------------------
