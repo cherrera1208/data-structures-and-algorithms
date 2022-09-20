@@ -67,7 +67,13 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
-  // Solution code here...
+  for (let i = 0; i < str.length; i++) {
+    let strArr = [...str];
+    strArr.splice(0, i);
+    let newStr = strArr.join('');
+    result.push(newStr);
+  }
+  result.push('');
   return result;
 };
 
@@ -127,10 +133,15 @@ const gruffaloCrumble = {
 
 
 const listFoods = (recipe) => {
-  let result = [];
-  // Solution code here...
-  return result;
+  return recipe.ingredients.reduce((accumulator, current) => {
+    let newArr = current.split(' ');
+    let singleIngredient = newArr.slice(2, newArr.length);
+    let newStr = singleIngredient.join(' ');
+    accumulator.push(newStr);
+    return accumulator;
+  }, []);
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal

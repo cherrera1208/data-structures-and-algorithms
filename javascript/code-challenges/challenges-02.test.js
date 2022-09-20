@@ -27,7 +27,8 @@ Write a function named addQuestion that, given an array of strings, uses map to 
 ------------------------------------------------------------------------------------------------ */
 
 const addQuestion = (arr) => {
-  arr.map(r => r + '?');
+  let newArr = arr.map(str => `${str}?`);
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -68,7 +69,8 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 ------------------------------------------------------------------------------------------------ */
 
 const mapTwoToThe = (arr) => {
-  arr.map(r => Math.pow(2, r));
+  let newArr = arr.map(num => Math.pow(2, num));
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------

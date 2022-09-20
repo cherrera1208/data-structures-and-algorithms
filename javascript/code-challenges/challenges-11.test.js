@@ -19,8 +19,13 @@ Becomes:
 ------------------------------------------------------------------------------------------------ */
 
 function transformToLis(obj) {
-  // Solution code here...
-};
+  let entries = Object.entries(obj);
+  return entries.map(entry => {
+    let listItem = document.createElement('li');
+    listItem.innerHTML = `${entry[0]}: ${entry[1]}`;
+    return listItem.outerHTML;
+  });
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -76,7 +81,15 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  // Solution code here...
+  let results = [];
+  input.forEach(arr => {
+    let singleArr = [];
+    arr.forEach(num => {
+      if (Number.isInteger(num) && num % 5 === 0) singleArr.push(Math.pow(2, num));
+    });
+    results.push(singleArr);
+  });
+  return results;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -142,7 +155,12 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
-  // Solution code here...
+  let arr = data.reduce((accumulator, character) => {
+    let temp = accumulator;
+    if (character.gender === 'female' || character.gender === 'male') temp.push(character.name);
+    return temp;
+  }, []);
+  return arr.join(' and ');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -152,7 +170,13 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 ------------------------------------------------------------------------------------------------ */
 
 let findShortest = (data) => {
-  // Solution code here...
+  let shortChar = data.reduce((shortest, char) => {
+    let temp = shortest;
+    console.log(temp);
+    if (Number.parseInt(char.height) < Number.parseInt(temp.height)) return char;
+    else return temp;
+  }, data[0]);
+  return shortChar.name;
 };
 
 /* ------------------------------------------------------------------------------------------------
