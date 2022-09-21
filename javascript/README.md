@@ -87,3 +87,5 @@ Note that when you check your code into GitHub, all of your tests will automatic
 ## Table of Contents
 
 - [Reverse an Array](/code-challenges/array-reverse/README.md)
+
+- [Insert to Middle of an Array](/code-challenges/array-insert-shift/README.md)
