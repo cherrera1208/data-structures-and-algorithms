@@ -4,7 +4,7 @@ create a new linked list that has two given lists zipped together.
 
 ## Whiteboard Process
 
-![linked-list-zip](/img/linked-list-zip.jpg)
+![linked-list-zip](../img/linked-list-zip.jpg)
 
 ## Approach & Efficiency
 
