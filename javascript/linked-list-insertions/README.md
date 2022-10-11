@@ -4,7 +4,7 @@ The challenge requires me to manipulate a linked list data structure in three wa
 
 ## Whiteboard Process
 
-![insert-linked-list](/javascript/img/insert-linked-list.jpg)
+![insert-linked-list](/img/insert-linked-list.jpg)
 
 ## Approach & Efficiency
 
