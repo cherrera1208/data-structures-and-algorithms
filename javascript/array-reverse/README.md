@@ -5,7 +5,7 @@ the goal of this challenge is to take an array of numbers, possibly in a random 
 ## Whiteboard Process
 
 array-reverse
-![array-reverse](/javascript/img/array-reverse.jpg)
+![array-reverse](/img/array-reverse.jpg)
 
 ## Approach & Efficiency
 

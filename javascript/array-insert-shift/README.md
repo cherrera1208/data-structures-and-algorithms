@@ -5,7 +5,7 @@ this challenge asks that I insert a new array into an already established array.
 ## Whiteboard Process
 
 a literal whiteboard of the challenge
-![shift-array](/javascript/img/insert-shift-array.jpg)
+![shift-array](/img/insert-shift-array.jpg)
 
 ## Approach & Efficiency
 
