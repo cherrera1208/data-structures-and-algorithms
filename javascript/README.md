@@ -91,3 +91,5 @@ Note that when you check your code into GitHub, all of your tests will automatic
 - [Insert to Middle of an Array](/javascript/code-challenges/array-insert-shift/README.md)
 
 - [insert-list-insertions](/javascript/code-challenges/linked-list-insertions/README.md)
+
+- [sort and filter movies](/javascript/sort-and-filter-movies)
