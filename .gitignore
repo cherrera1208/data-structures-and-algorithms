@@ -1,6 +1,13 @@
 
 # Created by https://www.gitignore.io/api/node,macos,linux,windows,webstorm,visualstudiocode
 
+.github/
+c-csharp/
+java/
+python/
+sorting/
+
+
 ### Linux ###
 *~
 
@@ -197,7 +204,6 @@ fabric.properties
 # modules.xml
 # .idea/misc.xml
 # *.ipr
-.github
 
 # Sonarlint plugin
 .idea/sonarlint
