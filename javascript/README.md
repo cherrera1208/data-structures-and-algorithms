@@ -85,9 +85,3 @@ From the `data-structures-and-algorithms/javascript` folder, execute the followi
 Note that when you check your code into GitHub, all of your tests will automatically execute. These results should match your own, and will be found on the  **Actions** tab
 
 ## Table of Contents
-
-- [Reverse an Array](/javascript/code-challenges/array-reverse/README.md)
-
-- [Insert to Middle of an Array](/javascript/code-challenges/array-insert-shift/README.md)
-
-- [insert-list-insertions](/javascript/code-challenges/linked-list-insertions/README.md)
