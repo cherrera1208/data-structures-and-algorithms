@@ -3,10 +3,14 @@
 Extend a Linked List to allow various insertion methods.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+
+![Alt text](/javascript/img/linked-list-insertions.jpg)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+I had to find an additional method to print the results to console. It's called printList
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+
+an example of the code running in the terminal
+![Alt text](/javascript/img/append-example.jpg)
