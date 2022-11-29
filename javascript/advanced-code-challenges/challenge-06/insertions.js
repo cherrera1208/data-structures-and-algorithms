@@ -35,9 +35,9 @@ class LinkedList {
   }
 }
 
-const myLinkedList = new LinkedList(10);
-myLinkedList.append(5);
-myLinkedList.append(16);
+const myLinkedList = new LinkedList(0);
+myLinkedList.append(1);
+myLinkedList.append(2);
 myLinkedList.printList();
 console.log(myLinkedList.printList());
 
