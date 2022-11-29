@@ -7,4 +7,5 @@ k-th value from the end of a linked list.
 ![Alt text](/javascript/img/linked-list-kth-value.jpg)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
+
+use two pointers to check the linked list in a single pass
