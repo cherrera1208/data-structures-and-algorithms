@@ -1,5 +1,5 @@
 const { Hashtable } = require('../code-challenge30/hashtable.js');
-const { hashmapLeftJoin } = require('./hashLeft.js');
+const { hashmapLeftJoin } = require('./leftHash.js');
 
 describe('Hashmap Left Join', () => {
   test('should left join two hashmaps', () => {
