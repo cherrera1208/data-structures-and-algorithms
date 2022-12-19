@@ -1,4 +1,4 @@
-const { repeatedWord } = require('./hashmap-repeated.js');
+const { repeatedWord } = require('./repeatWord.js');
 
 describe('Tests for repeatedWord Hashmap', () => {
 
